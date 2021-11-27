@@ -18,6 +18,8 @@ public class interfaceForm extends JFrame {
     private JEditorPane Word;
     private JEditorPane letterPane;
     private JLabel informationLabel;
+    private JLabel GivenLetter;
+
 
     private GameController gameController;
     private boolean startGame;
@@ -88,6 +90,10 @@ public class interfaceForm extends JFrame {
         informationLabel.setText(string);
     }
 
+    public void setInformationGivenLetter(String string) {
+        GivenLetter.setText(string);
+    }
+
     public void setToWord(String string) {
         Word.setText(string.substring(0, string.length()));
     }
@@ -96,78 +102,4 @@ public class interfaceForm extends JFrame {
         // TODO: place custom component creation code here
     }
 
-    /*
-                   // receiver - client or server - object type - can receive either one?
-
-
-        Cand apesi pe button send message, sa avem o functie care sa ne returneze ce e in textul scris de utilizator
-        si sa goleasca ce e in textfield
-
-        trimite textul la client / server
-
-        iti trebuie o functie pe server / client care sa receptioneze mesajul si sa il trimita pe portul deschis
-     -------------
-
-        O functie care adauga text in fieldul de message de la useri
-        string + message from user -> dispaly on field ( la margine dai \n )
-
-        void care doar scrie ce primeste de la client / server
-    ------------------
-
-        Faci stringuri cu pasii de spanzuratoare
-
-        in alt fisier pui stringurile si ti le returnezi la request
-
-        tip enumerare ( enum ) sau vector
-
-
-    ------------------
-        functie de scris cuvant
-
-        string pe care il scri in textfield-ul pentru cuvant
-
-        functie void care e apelata de server / client si retine stringul de mai sus
-
-    --------------------
-
-        primul joc scrie cuvantul serverul si da send letter - caz special, nu poate sa scrie mai multe litere in cazul in care jocul e inceput
-
-        dupa ce jocul s-a terminat, e randul clientului, ai o variabila care tine minte - si se schimba dupa fiecare end game
-
-   ---------------------
-
-        functie send letter
-
-        care trimite o litera la verificare
-
-  -----------------------
-
-        o functie care verifica daca in cuvant este litera scrisa
-
-        returneaza true sau false
-
-    --------------------
-
-        o functie care
-
-            daca exista litera: atunci afiseaza litera in fieldul de cuvant
-
-            daca nu exista litera: avanseaza cu spanzuratoarea:
-                        - numar de greseli, daca ajunge la el, eng game
-                        - 0 - no mistake
-                        - 1 -
-                        functie(parametru nr greseala) - returneaza din array stringul
-
-    --------------------
-
-            eng game care reface tot ca la inceput
-
-            si schimba jucatorii
-
-    --------------------
-
-        functie care porneste interfata pentru fiecare jucator
-
-    --------------------
-     */
 }

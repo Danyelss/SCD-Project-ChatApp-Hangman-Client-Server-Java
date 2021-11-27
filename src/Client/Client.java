@@ -61,7 +61,7 @@ public class Client {
         this.gameController = new GameController(this);
 
         try {
-            this.clientSocket = new Socket("127.0.0.1", 8089);
+            this.clientSocket = new Socket("192.168.43.168", 8089);
             this.out = new PrintWriter(clientSocket.getOutputStream());
             this.in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
