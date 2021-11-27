@@ -135,6 +135,9 @@ public class GameController {
 
     // new game
     private void newGame() {
+
+        myFrame.setInformationGivenLetter(" ");
+
         this.giveWord = !giveWord;
         word = "";
         secretWord = "";
@@ -149,6 +152,7 @@ public class GameController {
         }
 
         System.out.println(this.type + " - " + giveWord);
+
 
     }
 

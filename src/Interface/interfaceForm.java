@@ -91,7 +91,8 @@ public class interfaceForm extends JFrame {
     }
 
     public void setInformationGivenLetter(String string) {
-        GivenLetter.setText(string);
+
+        GivenLetter.setText("Given letter: " + string);
     }
 
     public void setToWord(String string) {
