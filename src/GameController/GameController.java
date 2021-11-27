@@ -18,6 +18,8 @@ public class GameController {
 
     private interfaceForm myFrame;
 
+    private String letters = "";
+
     public GameController(Server server) {
         this.type = "server";
         this.server = server;
@@ -54,6 +56,8 @@ public class GameController {
                     displayMistake(getMistake());
                     sendData("$");
                 }
+
+                letterGiven((string.toUpperCase()).charAt(1));
 
                 checkEnd(secretWord);
 
@@ -120,6 +124,13 @@ public class GameController {
 
 
     // game logic
+
+    public void letterGiven(Character character) {
+        this.letters += ' ';
+        this.letters += character;
+
+        myFrame.setInformationGivenLetter(letters);
+    }
 
     // new game
     private void newGame() {

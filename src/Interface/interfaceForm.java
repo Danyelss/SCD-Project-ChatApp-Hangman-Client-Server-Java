@@ -30,7 +30,7 @@ public class interfaceForm extends JFrame {
 
         setContentPane(panel1);
         this.setTitle("Welcome");
-        setSize(1000, 700);
+        setSize(1000, 800);
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setVisible(true);
