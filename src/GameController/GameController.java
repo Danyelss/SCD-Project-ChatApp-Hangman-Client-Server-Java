@@ -130,7 +130,7 @@ public class GameController {
         this.letters += ' ';
         this.letters += character;
 
-        myFrame.setInformationGivenLetter(letters);
+        myFrame.setInformationGivenLetter(letters.toUpperCase());
     }
 
     // new game
