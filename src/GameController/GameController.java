@@ -119,7 +119,7 @@ public class GameController {
     }
 
     public void sendLetter(String string) {
-        letterGiven(string.charAt(0));
+        letterGiven(string.toUpperCase().charAt(0));
         sendData("#" + string.charAt(0));
     }
 
