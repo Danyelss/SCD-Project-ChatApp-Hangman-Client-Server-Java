@@ -4,5 +4,5 @@ This is a client server app
 
 Functionalities:
 
-  Chat App
+  Chat App -
   2 Player game - Hangman
