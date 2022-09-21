@@ -1,4 +1,4 @@
-# SCD Project ChatApp Hangman Client Server Java
+# SCD Project - ChatApp Hangman - Client Server Java
 
 This is a client server app
 
